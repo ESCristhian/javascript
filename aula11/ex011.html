@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeroporto</title>
+</head>
+<body>
+    <h1>Sistema de localização</h1>
+    Você mora em:<input type="text" name="" id="local">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular() {
+            var loc = document.getElementById('local')
+            var res = document.getElementById('res')
+            res.innerHTML = `<p>Você está em ${loc.value}</p>`
+            if (loc.value != 'Brasil') {
+                res.innerHTML += `Você é um estrangeiro!`
+            } else {
+                res.innerHTML += `Você é um Brasileiro!`
+            }
+        }
+    </script>
+</body>
+</html>

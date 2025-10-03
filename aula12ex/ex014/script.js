@@ -4,7 +4,6 @@ function carregar() {
     var fr = document.getElementById('frase')
     var data = new Date()
     var hora = data.getHours()
-    hora = 13
     msg.innerHTML = `Agora são ${hora} horas.`
     if (hora >= 6 && hora < 12) {
         img.src = 'manha.png'

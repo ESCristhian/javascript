@@ -13,7 +13,7 @@ function calcular() {
         return
     }
 
-    if (npasso <= 0) {
+    if (npasso <= 0 && < 1) {
         window.alert('Passso invalido! Considere PASSO: 1')
         npasso = 1
     }
